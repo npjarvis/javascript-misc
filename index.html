@@ -16,7 +16,7 @@
                 <h1>Age Calculator</h1>
                 <p class="lead">Let me calculate your current age given your birthdate</p>
             </header>
-
+<!--- no action or message here because we want to catch it in javascript and handle it locally--->
             <form id="age-form" role="form">
                 <div class="form-group">
                     <label for="name-input" class="required-field">Your Name</label>
@@ -27,18 +27,19 @@
                     <label for="dob-input" class="required-field">Your Birthdate</label>
                     <input type="date" id="dob-input" name="dob" class="form-control" placeholder="your birthdate"/>
                 </div>
-
+<!--button types allow easy functions, such as rest-->
                 <div class="form-group text-right">
                     <button type="button" class="btn btn-default" id="exit-button">Get Me Out of Here!</button>
                     <button type="reset" class="btn btn-warning" id="reset-button">Start Over</button>
                     <button type="submit" class="btn btn-success">Calculate My Age</button>
                 </div>
             </form>
-
+<!--- put something on the screen in 'age-message'--->
             <p id="age-message" class="lead"></p>
 
         </main>
 
+        <script src ="js/moment.js"></script>
         <script src="js/app.js"></script>
     </body>
 </html>
